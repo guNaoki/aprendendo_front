@@ -582,6 +582,46 @@ footer a[href*="youtube"]:hover{
     padding-bottom: 0px;
 }
 
+/*Página Sobre*/
+
+.perfil{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, transparent 70%, #000000 100%), 
+    url('images/foto\ de\ universo.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: darken;    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow:inset 0px -50px 150px rgb(0, 0, 0);
+
+}
+
+
+.perfil img{
+    width: 300px;
+    border-radius: 100%;
+    corner-shape: scoop;
+    border: 2px solid white;
+    box-shadow: 0px 0px 20px aqua;
+    transition: all 0.5s ease-in-out;
+    will-change: transform;
+    filter: grayscale(100%) brightness(20); /* Cria o efeito de sobreposição branca */
+}
+.perfil img:hover{
+    transform: scale(1.1);
+    border: 3px solid white;
+    border-radius: 50%;
+    corner-shape: round;
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+    filter: grayscale(0%) brightness(1); /* Retorna à cor original no hover */
+}
+
 
 
 /*@keyframes*/
